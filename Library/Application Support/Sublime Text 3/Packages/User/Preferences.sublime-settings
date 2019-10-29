@@ -1,0 +1,90 @@
+{
+	"auto_complete": false,
+	"auto_complete_commit_on_tab": true,
+	"auto_complete_triggers":
+	[
+		{
+			"characters": "<",
+			"selector": "text.html"
+		},
+		{
+			"characters": ".",
+			"selector": "source.ruby"
+		}
+	],
+	"auto_match_enabled": true,
+	"bold_folder_labels": true,
+	"caret_extra_bottom": 2,
+	"caret_extra_top": 2,
+	"caret_extra_width": 0.5,
+	"caret_style": "solid",
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Palenight.tmTheme",
+	"command": "rust_goto",
+	"context":
+	[
+		{
+			"key": "selector",
+			"operand": "source.rust",
+			"operator": "equal"
+		}
+	],
+	"drag_text": false,
+	"ensure_newline_at_eof_on_save": false,
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		".sass-cache",
+		".ensime_cache",
+		"node_modules",
+		"_site",
+		"target",
+		"env"
+	],
+	"font_face": "B612",
+	"font_size": 13.5,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Agda",
+		"Alignment",
+		"Color Highlighter",
+		"ColorPicker",
+		"Deviot (Arduino IDE)",
+		"Ensime",
+		"Git",
+		"JavaImports",
+		"KeybindingHelper",
+		"Markdown",
+		"NimLime",
+		"rsub",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-contrib-rustc",
+		"SublimeLinter-javac",
+		"SublimePro",
+		"Vintage",
+		"Vintageous",
+		"WordCount",
+		"YcmdCompletion"
+	],
+	"keys":
+	[
+		"ctrl+r",
+		"ctrl+g"
+	],
+	"line_numbers": true,
+	"margin": -4,
+	"overlay_scroll_bars": "disabled",
+	"predawn_sidebar_xsmall": false,
+	"predawn_tabs_small": false,
+	"scroll_speed": 4.0,
+	"tab_size": 2,
+	"theme": "Boxy Tomorrow.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": false,
+	"vintageous_reset_mode_when_switching_tabs": false
+}

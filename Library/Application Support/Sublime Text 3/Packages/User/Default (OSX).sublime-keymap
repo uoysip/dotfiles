@@ -1,0 +1,16 @@
+[
+{
+  "command": "rust_goto", "keys": ["ctrl+r", "ctrl+g"], "context": [
+    {"key": "selector", "operator": "equal", "operand": "source.rust"}
+  ]
+},
+{
+  "command": "rust_doc", "keys": ["ctrl+r", "ctrl+d"], "context": [
+    {"key": "selector", "operator": "equal", "operand": "source.rust"}
+  ]
+},
+{ "keys": ["super+k", "super+h"], "command": "toggle_tabs" },
+{ "keys": ["super+alt+n"], "command": "advanced_new_file_new"},
+
+
+]

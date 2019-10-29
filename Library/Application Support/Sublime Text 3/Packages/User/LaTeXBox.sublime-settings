@@ -1,0 +1,19 @@
+{
+	"cmd":
+	[
+		"latexmk",
+		"-quiet",
+		"-pdf",
+		"-e",
+		"$pdflatex = 'xelatex %O -interaction=nonstopmode --shell-escape -synctex=1 %S'"
+	],
+	"cmd_force":
+	[
+		"latexmk",
+		"-g",
+		"-quiet",
+		"-pdf",
+		"-e",
+		"$pdflatex = 'xelatex %O -interaction=nonstopmode --shell-escape -synctex=1 %S'"
+	]
+}

@@ -1,0 +1,117 @@
+{
+	"bootstrapped": true,
+	"downloader_precedence":
+	{
+		"linux":
+		[
+			"curl",
+			"wget",
+			"urllib"
+		],
+		"osx":
+		[
+			"curl",
+			"wget",
+			"urllib"
+		],
+		"windows":
+		[
+			"wininet"
+		]
+	},
+	"in_process_packages":
+	[
+	],
+	"install_prereleases":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"AdvancedNewFile",
+		"Alignment",
+		"All Autocomplete",
+		"Anaconda",
+		"anaconda_rust",
+		"AppendSemiColon",
+		"Argument Noun",
+		"ARM Assembly",
+		"Better CoffeeScript",
+		"Boxy Theme",
+		"BracketHighlighter",
+		"C++ Snippets",
+		"Calculate",
+		"Charcoal",
+		"CMakeEditor",
+		"Color Highlighter",
+		"ColorSchemeEditor",
+		"Colorsublime",
+		"Context",
+		"DashDoc",
+		"Deviot (Arduino IDE)",
+		"DocBlockr",
+		"Edit Preferences",
+		"Emmet",
+		"Expression",
+		"FuzzyFileNav",
+		"Git",
+		"GitGutter",
+		"GitHub Markdown Snippets",
+		"GitSavvy",
+		"GitUp",
+		"GoldenRatio",
+		"GotoWindow",
+		"IndentationNavigation",
+		"Julia",
+		"KeybindingHelper",
+		"Keymaps",
+		"LaTeXBox",
+		"LaTeXTools",
+		"Line Endings Unify",
+		"LocalVariable",
+		"LSP",
+		"Markdown Extended",
+		"MarkdownPreview",
+		"Material Theme",
+		"Materialize",
+		"MaxPane",
+		"Method",
+		"Monokai - Spacegray",
+		"MultiEditUtils",
+		"NimLime",
+		"Nix",
+		"OpenScad",
+		"Origami",
+		"Package Control",
+		"PackageResourceViewer",
+		"Path Tools",
+		"PlainTasks",
+		"Predawn",
+		"Pretty JSON",
+		"QML",
+		"Railscasts Extended",
+		"Related Files",
+		"Rust Enhanced",
+		"Sass",
+		"Schemr",
+		"SelectionRubyEval",
+		"SSH Config",
+		"Statement",
+		"SublimeLinter",
+		"SublimeLinter-contrib-rustc",
+		"SublimeLinter-javac",
+		"Switch File Deluxe",
+		"TabNine",
+		"Terminal",
+		"Text Pastry",
+		"Theme - Spacegray",
+		"Themes Menu Switcher",
+		"TOML",
+		"UnicodeCompletion",
+		"VAlign",
+		"Vintageous",
+		"WordCount",
+		"x86 and x86_64 Assembly",
+		"Zen Tabs"
+	]
+}
