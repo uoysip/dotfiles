@@ -44,7 +44,7 @@
 		"env"
 	],
 	"font_face": "B612",
-	"font_size": 13.5,
+	"font_size": 12.5,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -66,10 +66,12 @@
 		"SublimeLinter-contrib-rustc",
 		"SublimeLinter-javac",
 		"SublimePro",
+		"TabNine",
 		"Vintage",
 		"Vintageous",
 		"WordCount",
-		"YcmdCompletion"
+		"YcmdCompletion",
+		"zzz A File Icon zzz"
 	],
 	"keys":
 	[
@@ -86,5 +88,8 @@
 	"theme": "Boxy Tomorrow.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": false,
+	"update_check": false,
+	"show_full_path": false,
+	"open_files_in_new_window": false,
 	"vintageous_reset_mode_when_switching_tabs": false
 }
