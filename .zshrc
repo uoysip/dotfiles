@@ -1,12 +1,14 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 #temp line see if it works lol:
+export PATH=$(pyenv root)/shims:$PATH
 export PATH=$HOME/Documents/Other/cquery/build/release/bin/cquery:$PATH
 export PATH=~/.npm-global/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/lib/ruby/gems/2.5.0/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export PATH=/usr/local/anaconda3/bin:"$PATH"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -122,3 +124,11 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 alias "c=pbcopy"
 alias "v=pbpaste"
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+alias repo='cd /$HOME/Documents/Repositories/'
+
+leetcodeShow() {
+  leetcode show "$1" -gxe
+}
+alias ltS=leetcodeShow
+alias lts='leetcode submit'
+alias ltt='leetcode test'
