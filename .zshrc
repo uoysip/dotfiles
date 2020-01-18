@@ -140,3 +140,4 @@ gppCompile() {
 }
 
 alias gpp=gppCompile
+alias sl=sublime
