@@ -134,7 +134,9 @@ alias lts='leetcode submit'
 alias ltt='leetcode test'
 
 gppCompile() {
-    g++ -std=c++11 -O2 -Wall "$1" -o "$2"
+    file=${1%.*}
+    file="${file}.o"
+    g++ -std=c++11 -O2 -Wall "$1" -o "${file}"
 }
 
 alias gpp=gppCompile
