@@ -132,3 +132,9 @@ leetcodeShow() {
 alias ltS=leetcodeShow
 alias lts='leetcode submit'
 alias ltt='leetcode test'
+
+gppCompile() {
+    g++ -std=c++11 -O2 -Wall "$1" -o "$2"
+}
+
+alias gpp=gppCompile
