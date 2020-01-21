@@ -139,5 +139,12 @@ gppCompile() {
     g++ -std=c++11 -O2 -Wall "$1" -o "${file}"
 }
 
+gccCompile() {
+    file=${1%.*}
+    file="${file}.o"
+    gcc -Wall "$1" -o "${file}"
+}
+
 alias gpp=gppCompile
+alias gccc=gccCompile
 alias sl=sublime
