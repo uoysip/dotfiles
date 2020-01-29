@@ -148,3 +148,4 @@ gccCompile() {
 alias gpp=gppCompile
 alias gccc=gccCompile
 alias sl=sublime
+alias sudo='sudo '
