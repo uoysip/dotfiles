@@ -13,11 +13,12 @@
 		}
 	],
 	"auto_match_enabled": true,
+	"block_caret": false,
 	"bold_folder_labels": true,
 	"caret_extra_bottom": 2,
 	"caret_extra_top": 2,
 	"caret_extra_width": 0.5,
-	"caret_style": "solid",
+	"caret_style": "phase",
 	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Palenight.tmTheme",
 	"command": "rust_goto",
 	"context":
@@ -43,8 +44,8 @@
 		"target",
 		"env"
 	],
-	"font_face": "B612",
-	"font_size": 12.5,
+	"font_face": "M+ 1c",
+	"font_size": 15,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -61,6 +62,7 @@
 		"Markdown",
 		"NimLime",
 		"rsub",
+		"Rust",
 		"SideBarEnhancements",
 		"SublimeLinter",
 		"SublimeLinter-contrib-rustc",
@@ -70,8 +72,7 @@
 		"Vintage",
 		"Vintageous",
 		"WordCount",
-		"YcmdCompletion",
-		"zzz A File Icon zzz"
+		"YcmdCompletion"
 	],
 	"keys":
 	[
@@ -80,16 +81,16 @@
 	],
 	"line_numbers": true,
 	"margin": -4,
+	"open_files_in_new_window": false,
 	"overlay_scroll_bars": "disabled",
 	"predawn_sidebar_xsmall": false,
 	"predawn_tabs_small": false,
+	"scroll_past_end": true,
 	"scroll_speed": 4.0,
+	"show_full_path": false,
 	"tab_size": 2,
-	"theme": "Boxy Tomorrow.sublime-theme",
+	"theme": "Spacegray Oceanic.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": false,
-	"update_check": false,
-	"show_full_path": false,
-	"open_files_in_new_window": false,
 	"vintageous_reset_mode_when_switching_tabs": false
 }
