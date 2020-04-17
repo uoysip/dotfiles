@@ -44,7 +44,7 @@
 		"target",
 		"env"
 	],
-	"font_face": "M+ 1c",
+	"font_face": "mononoki",
 	"font_size": 15,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
@@ -52,6 +52,9 @@
 	[
 		"Agda",
 		"Alignment",
+		"Anaconda",
+		"anaconda_rust",
+		"Boxy Theme",
 		"Color Highlighter",
 		"ColorPicker",
 		"Deviot (Arduino IDE)",
@@ -62,7 +65,7 @@
 		"Markdown",
 		"NimLime",
 		"rsub",
-		"Rust",
+		"Rust Enhanced",
 		"SideBarEnhancements",
 		"SublimeLinter",
 		"SublimeLinter-contrib-rustc",
