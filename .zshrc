@@ -135,13 +135,13 @@ alias ltt='leetcode test'
 
 gppCompile() {
     file=${1%.*}
-    file="${file}.o"
+    file="${file}"
     g++ -std=c++17 -O2 -Wall "$1" -o "${file}"
 }
 
 gccCompile() {
     file=${1%.*}
-    file="${file}.o"
+    file="${file}"
     gcc -Wall "$1" -o "${file}"
 }
 
