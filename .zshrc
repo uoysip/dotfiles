@@ -70,6 +70,8 @@ POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+TOUCHBAR_GIT_ENABLED=true
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -82,6 +84,7 @@ plugins=(
   ruby,
   emacs,
   zsh-autosuggestions,
+  zsh-iterm-touchbar,
   git
 )
 
@@ -147,5 +150,34 @@ gccCompile() {
 
 alias gpp=gppCompile
 alias gccc=gccCompile
+alias sublime="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
 alias sl=sublime
+alias merge="'/Applications/Sublime Merge.app/Contents/SharedSupport/bin/smerge'"
+alias mrg=merge
 alias sudo='sudo '
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/dishon/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/dishon/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/dishon/opt/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/dishon/opt/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+# aliases for unix commands
+alias cat='bat'
+alias ping='prettyping --nolegend'
+alias preview="fzf --preview 'bat --color \"always\" {}'"
+export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(\"/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl\" {})+abort'"
+alias top="sudo htop"
+alias ls='exa'
+alias fd='find'
+alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
+alias help='tldr'
