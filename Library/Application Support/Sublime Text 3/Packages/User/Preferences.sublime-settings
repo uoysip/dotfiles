@@ -19,7 +19,7 @@
 	"caret_extra_top": 2,
 	"caret_extra_width": 0.5,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Palenight.tmTheme",
+	"color_scheme": "Packages/Materialize/schemes/Material Monokai.tmTheme",
 	"command": "rust_goto",
 	"context":
 	[
@@ -45,16 +45,13 @@
 		"env"
 	],
 	"font_face": "mononoki",
-	"font_size": 15,
+	"font_size": 17,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"Agda",
 		"Alignment",
-		"Anaconda",
-		"anaconda_rust",
-		"Boxy Theme",
 		"Color Highlighter",
 		"ColorPicker",
 		"Deviot (Arduino IDE)",
@@ -66,11 +63,11 @@
 		"NimLime",
 		"rsub",
 		"Rust Enhanced",
-		"SideBarEnhancements",
 		"SublimeLinter",
 		"SublimeLinter-contrib-rustc",
 		"SublimeLinter-javac",
 		"SublimePro",
+		"SublimeREPL",
 		"TabNine",
 		"Vintage",
 		"Vintageous",
@@ -84,7 +81,7 @@
 	],
 	"line_numbers": true,
 	"margin": -4,
-	"open_files_in_new_window": false,
+	"open_files_in_new_window": true,
 	"overlay_scroll_bars": "disabled",
 	"predawn_sidebar_xsmall": false,
 	"predawn_tabs_small": false,
