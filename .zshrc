@@ -9,6 +9,7 @@ export PATH=/usr/local/lib/ruby/gems/2.5.0/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=/usr/local/anaconda3/bin:"$PATH"
+export PATH="/$HOME/google-cloud-sdk/bin:$PATH"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -178,12 +179,12 @@ alias preview="fzf --preview 'bat --color \"always\" {}'"
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(\"/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl\" {})+abort'"
 alias top="sudo htop"
 alias ls='exa'
-alias fd='find'
+alias find='fd'
 alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 alias help='tldr'
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '$HOME/google-cloud-sdk/path.zsh.inc' ]; then . '$HOME/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f 'users/dishon/google-cloud-sdk/path.zsh.inc' ]; then . 'users/dishon/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '$HOME/google-cloud-sdk/completion.zsh.inc' ]; then . '$HOME/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f 'users/dishon/google-cloud-sdk/completion.zsh.inc' ]; then . 'users/dishon/google-cloud-sdk/completion.zsh.inc'; fi
