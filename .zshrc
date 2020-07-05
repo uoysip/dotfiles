@@ -11,6 +11,10 @@ export ZSH="$HOME/.oh-my-zsh"
 export PATH=/usr/local/anaconda3/bin:"$PATH"
 export PATH="/$HOME/google-cloud-sdk/bin:$PATH"
 
+# PlaidML paths
+export PLAIDML_NATIVE_PATH=$HOME/opt/anaconda3/envs/deep-learning/lib/libplaidml.dylib
+export RUNFILES_DIR=$HOME/opt/anaconda3/envs/deep-learning/share/plaidml
+
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
