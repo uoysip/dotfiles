@@ -10,6 +10,13 @@ export PATH=/usr/local/lib/ruby/gems/2.5.0/bin:$PATH
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=/usr/local/anaconda3/bin:"$PATH"
 export PATH="/$HOME/google-cloud-sdk/bin:$PATH"
+export ANDROID_SDK=/$HOME/Library/Android/sdk
+export PATH=/$HOME/Library/Android/sdk:$PATH
+export PATH=/$HOME/Library/Android/sdk/platform-tools:$PATH
+
+export ZONE="us-east1-c"
+export INSTANCE_NAME="my-fastai-instance"
+export INSTANCE_TYPE="n1-highmem-8"
 
 # PlaidML paths
 export PLAIDML_NATIVE_PATH=$HOME/opt/anaconda3/envs/deep-learning/lib/libplaidml.dylib
@@ -93,7 +100,24 @@ plugins=(
   git
 )
 
+
+# fix slow pasting (zsh-autosuggestions)
+pasteinit() {
+  OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
+  zle -N self-insert url-quote-magic
+}
+
+pastefinish() {
+  zle -N self-insert $OLD_SELF_INSERT
+}
+zstyle :bracketed-paste-magic paste-init pasteinit
+zstyle :bracketed-paste-magic paste-finish pastefinish
+
+
+# change autosuggestion color
 typeset -g ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=15'
+
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
