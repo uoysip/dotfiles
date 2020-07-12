@@ -1,12 +1,8 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-#temp line see if it works lol:
 export PATH=$(pyenv root)/shims:$PATH
 export PATH=$HOME/Documents/Other/cquery/build/release/bin/cquery:$PATH
 export PATH=~/.npm-global/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/lib/ruby/gems/2.5.0/bin:$PATH
-# Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=/usr/local/anaconda3/bin:"$PATH"
 export PATH="/$HOME/google-cloud-sdk/bin:$PATH"
@@ -14,13 +10,10 @@ export ANDROID_SDK=/$HOME/Library/Android/sdk
 export PATH=/$HOME/Library/Android/sdk:$PATH
 export PATH=/$HOME/Library/Android/sdk/platform-tools:$PATH
 
+# google cloud instance settings
 export ZONE="us-east1-c"
 export INSTANCE_NAME="my-fastai-instance"
 export INSTANCE_TYPE="n1-highmem-8"
-
-# PlaidML paths
-export PLAIDML_NATIVE_PATH=$HOME/opt/anaconda3/envs/deep-learning/lib/libplaidml.dylib
-export RUNFILES_DIR=$HOME/opt/anaconda3/envs/deep-learning/share/plaidml
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -31,63 +24,9 @@ POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
 POWERLEVEL9K_SHORTEN_DELIMITER=""
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 
-
-# Set list of themes to load
-# Setting this variable when ZSH_THEME=random
-# cause zsh load theme from this variable instead of
-# looking in ~/.oh-my-zsh/themes/
-# An empty array have no effect
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
-
-# Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
-
-# Uncomment the following line to use hyphen-insensitive completion. Case
-# sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
-
-# Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
-
-# Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
-
-# Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
-
-# Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
-
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# You can set one of the optional three formats:
-# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# or set a custom format using the strftime function format specifications,
-# see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
-
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
-
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-TOUCHBAR_GIT_ENABLED=true
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
+# zsh plugins
 plugins=(
   cargo,
   colored-man-pages,
@@ -96,10 +35,8 @@ plugins=(
   ruby,
   emacs,
   zsh-autosuggestions,
-  zsh-iterm-touchbar,
   git
 )
-
 
 # fix slow pasting (zsh-autosuggestions)
 pasteinit() {
@@ -120,50 +57,18 @@ typeset -g ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=15'
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+
+# aliases
 alias "c=pbcopy"
 alias "v=pbpaste"
-alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
-alias repo='cd /$HOME/Documents/Repositories/'
+alias repo='cd /$HOME/Repo/'
 
-leetcodeShow() {
-  leetcode show "$1" -gxe
-}
-alias ltS=leetcodeShow
-alias lts='leetcode submit'
-alias ltt='leetcode test'
+# config is used to manage the git repository
+alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
 gppCompile() {
     file=${1%.*}
@@ -179,11 +84,26 @@ gccCompile() {
 
 alias gpp=gppCompile
 alias gccc=gccCompile
+
 alias sublime="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
 alias sl=sublime
+
 alias merge="'/Applications/Sublime Merge.app/Contents/SharedSupport/bin/smerge'"
 alias mrg=merge
+
 alias sudo='sudo '
+
+# aliases for unix commands
+alias cat='bat'
+alias ping='prettyping --nolegend'
+alias preview="fzf --preview 'bat --color \"always\" {}'"
+export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(\"/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl\" {})+abort'"
+alias top="sudo htop"
+alias ls='exa'
+alias find='fd'
+alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
+alias help='tldr'
+
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -200,19 +120,9 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-# aliases for unix commands
-alias cat='bat'
-alias ping='prettyping --nolegend'
-alias preview="fzf --preview 'bat --color \"always\" {}'"
-export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(\"/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl\" {})+abort'"
-alias top="sudo htop"
-alias ls='exa'
-alias find='fd'
-alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
-alias help='tldr'
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f 'users/dishon/google-cloud-sdk/path.zsh.inc' ]; then . 'users/dishon/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '$HOME/google-cloud-sdk/path.zsh.inc' ]; then . '$HOME/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f 'users/dishon/google-cloud-sdk/completion.zsh.inc' ]; then . 'users/dishon/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '$HOME/google-cloud-sdk/completion.zsh.inc' ]; then . '$HOME/google-cloud-sdk/completion.zsh.inc'; fi
