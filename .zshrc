@@ -9,6 +9,7 @@ export PATH="/$HOME/google-cloud-sdk/bin:$PATH"
 export ANDROID_SDK=/$HOME/Library/Android/sdk
 export PATH=/$HOME/Library/Android/sdk:$PATH
 export PATH=/$HOME/Library/Android/sdk/platform-tools:$PATH
+export PATH=/Applications/MATLAB_R2020a.app/bin:$PATH
 
 # google cloud instance settings
 export ZONE="us-east1-c"
