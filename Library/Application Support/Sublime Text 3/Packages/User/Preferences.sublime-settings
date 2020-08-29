@@ -19,7 +19,7 @@
 	"caret_extra_top": 2,
 	"caret_extra_width": 0.5,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Materialize/schemes/Material Monokai.tmTheme",
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
 	"command": "rust_goto",
 	"context":
 	[
@@ -45,7 +45,7 @@
 		"env"
 	],
 	"font_face": "mononoki",
-	"font_size": 17,
+	"font_size": 14,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -59,7 +59,7 @@
 		"Git",
 		"JavaImports",
 		"KeybindingHelper",
-		"Markdown",
+		"LaTeXBox",
 		"NimLime",
 		"rsub",
 		"Rust Enhanced",
