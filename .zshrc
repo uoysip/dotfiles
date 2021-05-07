@@ -105,6 +105,8 @@ alias find='fd'
 alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 alias help='tldr'
 
+alias bes='nodemon --inspect ./bin/start.js'
+
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
